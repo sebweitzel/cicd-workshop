@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: otoorders
+  name: otoprod
   labels:
-    run: otoorders
+    run: otoprod
 spec:
   ports:
     - port: 5000 
