@@ -10,6 +10,8 @@ spec:
     - port: 8080 
       targetPort: 8080
   type: LoadBalancer
+  loadBalancerSourceRanges:
+  - 0.0.0.0/0
 ---
 apiVersion: extensions/v1beta1
 kind: Deployment
