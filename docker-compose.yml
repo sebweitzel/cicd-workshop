@@ -1,19 +1,19 @@
 version: '2'
 services:
   oto-frontend:
-    image: 'antweiss/otofrontend:master'
+    image: 'sebweitzel/otofrontend:master'
     links: 
      - otoprod
     ports:
      - 3000
   otoprod:
-    image: 'antweiss/otoproducts:master'
+    image: 'sebweitzel/otoproducts:master'
     ports:
      - 5000
     links:
      - mongo
   spring-orders:
-    image: 'otomato/springorders:master'
+    image: 'sebweitzel/springorders:master'
     links:
      - mongo
     ports:

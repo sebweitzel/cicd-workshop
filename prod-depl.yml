@@ -25,7 +25,7 @@ spec:
     spec:
       containers:
       - name: otoprod
-        image: antweiss/otoproducts:master
+        image: sebweitzel/otoproducts:master
         ports:
         - containerPort: 5000
         imagePullPolicy: Always
